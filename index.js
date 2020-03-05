@@ -69,3 +69,18 @@ console.log(obj.setCountry(cou))
 console.log(obj.getCountry())
 
 //
+function person(id){
+  let id=id;
+  this.name='hi';
+  this.setid=function(id)
+  {
+    id=id;
+  }
+  this.getid=function()
+  {
+    return id;
+  }
+}
+const person = new person('10');
+person.setid(2)
+console.log(person.getid())
