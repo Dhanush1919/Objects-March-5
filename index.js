@@ -1,17 +1,4 @@
-// Import stylesheets
-import './style.css';
-
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
-//Objects
 const obj ={
-  EmpId: 1090037,
-  Name: 'Dhanush',
-  Age: 20,
-  dob:12/03/1999,
-  location:Chennai,
-  Country:India,
   getEmpId : function()
   {
     return this.EmpId;
@@ -30,7 +17,7 @@ const obj ={
   },
   getAge : function()
   {
-    return this.getAge;
+    return this.Age;
   },
   setAge : function(Age)
   {
@@ -38,23 +25,46 @@ const obj ={
   },
   getdob : function()
   {
-    return this.getdob;
+    return this.dob;
   },
   setdob : function(dob)
   {
     this.dob = dob;
-  }
+  },
+  getlocation : function()
+  {
+    return this.location;
+  },
+  setlocation : function(location)
+  {
+    this.location = location;
+  },
+  getCountry : function()
+  {
+    return this.Country;
+  },
+  setCountry : function(Country)
+  {
+    this.Country = Country;
+  },
 }
 
-console.log(obj.setEmpId(37))
+let ID=prompt('Enter ID')
+let name=prompt('Enter name')
+let age=prompt('Enter Age')
+let dob=prompt('Enter dob')
+let loc=prompt('Enter location')
+let cou=prompt('Enter Country')
+console.log(obj.setEmpId(ID))
 console.log(obj.getEmpId())
-console.log(obj.setName('Dhanush'))
+console.log(obj.setName(name))
 console.log(obj.getName())
-console.log(obj.setAge(20))
+console.log(obj.setAge(age))
 console.log(obj.getAge())
-console.log(obj.setdob('12/03/1999'))
+console.log(obj.setdob(dob))
 console.log(obj.getdob())
-console.log(obj.setlocation('Chennai'))
+console.log(obj.setlocation(loc))
 console.log(obj.getlocation())
-console.log(obj.setCountry('India'))
+console.log(obj.setCountry(cou))
 console.log(obj.getCountry())
+
