@@ -84,3 +84,30 @@ function person(id){
 const person = new person('10');
 person.setid(2)
 console.log(person.getid())
+
+//Total - Marks : Morning Task March 05
+<html>
+<head>
+<script>
+let n=prompt('Enter the Name');
+let a=prompt('Enter the Mark 1');
+let b=prompt('Enter the Mark 2');
+let c=prompt('Enter the Mark 3');
+if((a<=100 && a>=0 || b<=100 && b>=0 || c<=100 && c>=0) && (parseInt(a)=='number' && parseInt(b)=='number' && parseInt(c)=='number'))
+{
+const obj={Name:n,Mark1:a,Mark2:b,Mark3:c}
+const obj2={Name:n,Total:Number(a)+Number(b)+Number(c)}
+const obj3={Avg:obj2.Total/3}
+const obj4={Name:n,Mark1:a,Mark2:b,Mark3:c,Avg:obj3.Avg}
+console.log(obj)
+console.log(obj2)
+console.log(obj3)
+console.log(obj4)
+}
+else
+{
+   alert("Invalid");
+}
+</script>
+</head>
+</html>
